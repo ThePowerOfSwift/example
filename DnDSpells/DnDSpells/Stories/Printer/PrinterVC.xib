@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrinterVC" customModule="DnDSpells" customModuleProvider="target">
+            <connections>
+                <outlet property="pdfContainer" destination="XNI-k9-kHd" id="EWZ-lc-mxT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNI-k9-kHd">
+                    <rect key="frame" x="0.0" y="156" width="414" height="690"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gs-gP-5GR" customClass="NextButton" customModule="DnDSpells" customModuleProvider="target">
+                    <rect key="frame" x="16" y="84" width="382" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="0UI-jU-WHS"/>
+                    </constraints>
+                    <state key="normal" title="Печать"/>
+                    <connections>
+                        <action selector="touchPrint:" destination="-1" eventType="touchUpInside" id="Fa4-lV-RE1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1gs-gP-5GR" secondAttribute="trailing" constant="16" id="Ly2-p9-4Nz"/>
+                <constraint firstItem="1gs-gP-5GR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZZL-uc-TdK"/>
+                <constraint firstItem="1gs-gP-5GR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="fGM-5F-bKy"/>
+                <constraint firstItem="XNI-k9-kHd" firstAttribute="top" secondItem="1gs-gP-5GR" secondAttribute="bottom" constant="16" id="iUr-bI-rPf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XNI-k9-kHd" secondAttribute="trailing" id="pjH-mN-Bfu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XNI-k9-kHd" secondAttribute="bottom" constant="16" id="v33-vE-1H9"/>
+                <constraint firstItem="XNI-k9-kHd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="z1X-LC-De9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

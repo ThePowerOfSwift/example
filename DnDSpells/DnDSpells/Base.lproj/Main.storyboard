@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3BF-ZF-fSF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GdC-kq-KxD">
+            <objects>
+                <viewController id="VO7-Ja-qkL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5x-O7-keK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-1653"/>
+        </scene>
+        <!--Фильтр-->
+        <scene sceneID="ZA6-Wf-mKh">
+            <objects>
+                <viewController id="b7q-xn-S7p" customClass="FilterVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Фильтр" largeTitleDisplayMode="never" id="6aI-w0-bwr">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Xdx-jr-hE7">
+                            <connections>
+                                <action selector="touchClear" destination="b7q-xn-S7p" id="8gu-fq-87g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wa-IN-zzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="-942"/>
+        </scene>
+        <!--Заклинания-->
+        <scene sceneID="9nS-KY-fNV">
+            <objects>
+                <viewController id="Cxu-WN-oPi" customClass="SpellListVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Заклинания" id="vqq-IC-BdM"/>
+                    <connections>
+                        <segue destination="sBc-3V-l1h" kind="show" identifier="spell" id="mqJ-KT-w2o"/>
+                        <segue destination="b7q-xn-S7p" kind="show" identifier="filter" id="WN9-MS-Kvp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gw8-2c-24K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="-220.98214285714286"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="A3d-Gw-7yi">
+            <objects>
+                <viewController id="sBc-3V-l1h" customClass="SpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Title" id="LZk-Me-pC5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gz-ir-aXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860.86956521739137" y="-220.98214285714286"/>
+        </scene>
+        <!--PrinterVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PrinterVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="1443"/>
+        </scene>
+        <!--Заклинания-->
+        <scene sceneID="w0g-jT-q4o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QdI-TZ-0hl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Заклинания" image="Spells" id="DAq-cR-NLZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="IU0-jL-3WC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cxu-WN-oPi" kind="relationship" relationship="rootViewController" id="fbW-jX-5lw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cna-Bt-bMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-915.94202898550736" y="-220.98214285714286"/>
+        </scene>
+        <!--Книги заклинаний-->
+        <scene sceneID="sWp-hE-tTd">
+            <objects>
+                <viewController id="tIx-3Y-P5G" customClass="SpellBookListVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Книги заклинаний" id="rcc-D9-LAE"/>
+                    <connections>
+                        <segue destination="AhW-9T-aC9" kind="show" identifier="add" id="Cng-5v-8PM"/>
+                        <segue destination="8W5-St-OC3" kind="show" identifier="spellBook" id="0VC-I3-5Ua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67q-Rw-mws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-29" y="515"/>
+        </scene>
+        <!--Создание-->
+        <scene sceneID="wmi-4A-kiT">
+            <objects>
+                <viewController id="AhW-9T-aC9" customClass="AddSpellBookVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Создание" id="woX-Bu-eHj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ez-bH-Uii" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="515"/>
+        </scene>
+        <!--Название книги-->
+        <scene sceneID="Pxz-Ku-L27">
+            <objects>
+                <viewController id="8W5-St-OC3" customClass="SpellBookVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Название книги" largeTitleDisplayMode="never" id="W4m-9B-JjI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZt-ls-Koq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="1274"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0FR-ap-U7F">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3BF-ZF-fSF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QvJ-Ro-Cry">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QdI-TZ-0hl" kind="relationship" relationship="viewControllers" id="Vh6-1Q-dM5"/>
+                        <segue destination="bbr-Z2-Kpx" kind="relationship" relationship="viewControllers" id="mPV-a3-XI9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmV-hd-PRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826.0869565217392" y="-220.98214285714286"/>
+        </scene>
+        <!--Книги заклинаний-->
+        <scene sceneID="Y1i-PF-HJE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bbr-Z2-Kpx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Книги заклинаний" image="Character" id="lca-ir-S60"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="wBx-7e-SCC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tIx-3Y-P5G" kind="relationship" relationship="rootViewController" id="0tw-TN-VTq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ck-7C-nBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-916" y="515"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Character" width="24" height="24"/>
+        <image name="Spells" width="24" height="24"/>
+    </resources>
+</document>

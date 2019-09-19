@@ -1,0 +1,1706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62059B61230E73A20095F67D /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62059B5F230E73A20095F67D /* FilterVC.swift */; };
+		62059B62230E73A20095F67D /* FilterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62059B60230E73A20095F67D /* FilterVC.xib */; };
+		62059B64230E73B00095F67D /* FilterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62059B63230E73B00095F67D /* FilterInput.swift */; };
+		62059B69230E875D0095F67D /* IOTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62059B66230E875D0095F67D /* IOTagCell.swift */; };
+		62059B6A230E875D0095F67D /* IOTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62059B67230E875D0095F67D /* IOTagCell.xib */; };
+		62059B6B230E875D0095F67D /* IOTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62059B68230E875D0095F67D /* IOTags.swift */; };
+		62059B6D230E9C2A0095F67D /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62059B6C230E9C2A0095F67D /* Filter.swift */; };
+		62059B6F230EA60F0095F67D /* SpellListInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62059B6E230EA60F0095F67D /* SpellListInput.swift */; };
+		62059B72230ECC0E0095F67D /* SpellCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62059B70230ECC0E0095F67D /* SpellCell2.swift */; };
+		62059B73230ECC0E0095F67D /* SpellCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62059B71230ECC0E0095F67D /* SpellCell2.xib */; };
+		620BD07C2313CF100051D47D /* ListSpellBooksAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BD07A2313CF100051D47D /* ListSpellBooksAC.swift */; };
+		620BD07D2313CF100051D47D /* ListSpellBooksAC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 620BD07B2313CF100051D47D /* ListSpellBooksAC.xib */; };
+		620BD0842313D6DA0051D47D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620BD0832313D6DA0051D47D /* NotificationCenter.framework */; };
+		620BD0872313D6DA0051D47D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BD0862313D6DA0051D47D /* TodayViewController.swift */; };
+		620BD08A2313D6DA0051D47D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620BD0882313D6DA0051D47D /* MainInterface.storyboard */; };
+		620BD08E2313D6DA0051D47D /* CharacterExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 620BD0822313D6DA0051D47D /* CharacterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		620BD0972313EF540051D47D /* SpellListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BD0962313EF540051D47D /* SpellListOutput.swift */; };
+		620BD0992313F0500051D47D /* SpellListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620BD0982313F0500051D47D /* SpellListPresenter.swift */; };
+		6211FBBB23018AAD001B2DBF /* SpellService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211FBBA23018AAD001B2DBF /* SpellService.swift */; };
+		6211FBC02301A7C7001B2DBF /* SpellBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211FBBF2301A7C7001B2DBF /* SpellBook.swift */; };
+		6211FBC62301A9FB001B2DBF /* SpellBookListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211FBC42301A9FB001B2DBF /* SpellBookListVC.swift */; };
+		6211FBC72301A9FB001B2DBF /* SpellBookListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6211FBC52301A9FB001B2DBF /* SpellBookListVC.xib */; };
+		6218D066232F7DB300B8AB3B /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6218D065232F7DB300B8AB3B /* AddButton.swift */; };
+		6219BCDF230BE9E3006EF1BE /* MonsterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6219BCDE230BE9E3006EF1BE /* MonsterService.swift */; };
+		6219BCE1230BF336006EF1BE /* Monster+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6219BCE0230BF336006EF1BE /* Monster+Action.swift */; };
+		6219BCE3230BF44C006EF1BE /* Monster+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6219BCE2230BF44C006EF1BE /* Monster+Location.swift */; };
+		6219BCE5230BFB6B006EF1BE /* MonsterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6219BCE4230BFB6B006EF1BE /* MonsterJSON.swift */; };
+		6219BCED230C0BC5006EF1BE /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 6219BCEC230C0BC5006EF1BE /* Monsters.json */; };
+		6219BCEF230C254C006EF1BE /* Spells.realm in Resources */ = {isa = PBXBuildFile; fileRef = 6219BCEE230C254C006EF1BE /* Spells.realm */; };
+		621A53B72301CBF40099F7F9 /* AddSpellBookOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A53B62301CBF40099F7F9 /* AddSpellBookOutput.swift */; };
+		621A53B92301CC510099F7F9 /* AddSpellBookInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A53B82301CC510099F7F9 /* AddSpellBookInput.swift */; };
+		621A53BB2301CEF50099F7F9 /* AddSpellBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621A53BA2301CEF50099F7F9 /* AddSpellBookPresenter.swift */; };
+		623E66F8232BDB4B00FD4310 /* SpellListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623E66F7232BDB4A00FD4310 /* SpellListVC.xib */; };
+		623E66FD232BDB5F00FD4310 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E66F9232BDB5F00FD4310 /* Text.swift */; };
+		623E66FE232BDB5F00FD4310 /* Header1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E66FA232BDB5F00FD4310 /* Header1.swift */; };
+		623E66FF232BDB5F00FD4310 /* Header2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E66FB232BDB5F00FD4310 /* Header2.swift */; };
+		623E6700232BDB5F00FD4310 /* Text2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E66FC232BDB5F00FD4310 /* Text2.swift */; };
+		6247C64A2302A7FD007790DB /* SourceMonsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6247C6492302A7FD007790DB /* SourceMonsters.swift */; };
+		6247C64E2302B58D007790DB /* Monsters.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6247C64D2302B58D007790DB /* Monsters.txt */; };
+		6260F6D02301ABAC004EDED1 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6260F6CE2301ABAC004EDED1 /* BookCell.swift */; };
+		6260F6D12301ABAC004EDED1 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6260F6CF2301ABAC004EDED1 /* BookCell.xib */; };
+		6260F6D72301C1EA004EDED1 /* AddSpellBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6260F6D52301C1EA004EDED1 /* AddSpellBookVC.swift */; };
+		6260F6D82301C1EA004EDED1 /* AddSpellBookVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6260F6D62301C1EA004EDED1 /* AddSpellBookVC.xib */; };
+		626F45D822E0661600A00BF6 /* SchoolSpellOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F45D722E0661600A00BF6 /* SchoolSpellOutput.swift */; };
+		626F45DA22E0663300A00BF6 /* SchoolSpellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F45D922E0663300A00BF6 /* SchoolSpellPresenter.swift */; };
+		626F45DF22E0B9AF00A00BF6 /* SpellListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F45DD22E0B9AF00A00BF6 /* SpellListVC.swift */; };
+		629059B8230A8C57000B888F /* String+html.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629059B7230A8C57000B888F /* String+html.swift */; };
+		629B41DB23180595000EFC6B /* Imported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B41DA23180595000EFC6B /* Imported.swift */; };
+		629B41DD231805AA000EFC6B /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B41DC231805AA000EFC6B /* Exported.swift */; };
+		62A6B3F723142CF000E1745F /* AddSpellToBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6B3F523142CF000E1745F /* AddSpellToBookVC.swift */; };
+		62A6B3F823142CF000E1745F /* AddSpellToBookVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62A6B3F623142CF000E1745F /* AddSpellToBookVC.xib */; };
+		62A6B3FA23142D0B00E1745F /* AddSpellToBookInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6B3F923142D0B00E1745F /* AddSpellToBookInput.swift */; };
+		62A6B3FC23142E3300E1745F /* AddSpellToBookOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6B3FB23142E3300E1745F /* AddSpellToBookOutput.swift */; };
+		62A6B3FE23142F2C00E1745F /* AddSpellToBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A6B3FD23142F2C00E1745F /* AddSpellToBookPresenter.swift */; };
+		62B0B56823152C7E00E18C23 /* SpellBookOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B56723152C7E00E18C23 /* SpellBookOutput.swift */; };
+		62B0B56A23152C8B00E18C23 /* SpellBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B56923152C8B00E18C23 /* SpellBookPresenter.swift */; };
+		62B0B56C2315334500E18C23 /* SpellBookInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B56B2315334500E18C23 /* SpellBookInput.swift */; };
+		62B0B56F2315336500E18C23 /* SpellBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B56D2315336500E18C23 /* SpellBookVC.swift */; };
+		62B0B5702315336500E18C23 /* SpellBookVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62B0B56E2315336500E18C23 /* SpellBookVC.xib */; };
+		62B0B57223153AB100E18C23 /* SpellCellTouches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B0B57123153AB100E18C23 /* SpellCellTouches.swift */; };
+		62B598BE23278FAD00625AEF /* Example.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 62B598BD23278FAD00625AEF /* Example.pdf */; };
+		62B9351E22FB07200009CB7F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B9351D22FB07200009CB7F /* Test.storyboard */; };
+		62BBD55C2327A456002473B5 /* PrinterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BBD55A2327A456002473B5 /* PrinterVC.swift */; };
+		62BBD55D2327A456002473B5 /* PrinterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62BBD55B2327A456002473B5 /* PrinterVC.xib */; };
+		62BBD55F2327B021002473B5 /* SpellCardPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BBD55E2327B021002473B5 /* SpellCardPDF.swift */; };
+		62CEC02522D739180034A1AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CEC02422D739180034A1AB /* AppDelegate.swift */; };
+		62CEC02722D739180034A1AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CEC02622D739180034A1AB /* ViewController.swift */; };
+		62CEC02A22D739180034A1AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CEC02822D739180034A1AB /* Main.storyboard */; };
+		62CEC02C22D7391E0034A1AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CEC02B22D7391E0034A1AB /* Assets.xcassets */; };
+		62CEC02F22D7391E0034A1AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CEC02D22D7391E0034A1AB /* LaunchScreen.storyboard */; };
+		62CEC04E22DC9D640034A1AB /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CEC04D22DC9D640034A1AB /* Book.swift */; };
+		62CEC05422DCB4870034A1AB /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 62CEC05322DCB4870034A1AB /* Books.json */; };
+		62CEC05622DCB9700034A1AB /* Schools.json in Resources */ = {isa = PBXBuildFile; fileRef = 62CEC05522DCB9700034A1AB /* Schools.json */; };
+		62CEC05822DCB9830034A1AB /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CEC05722DCB9830034A1AB /* School.swift */; };
+		62CEC05A22DCC3940034A1AB /* SpellJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CEC05922DCC3940034A1AB /* SpellJSON.swift */; };
+		62CEC05E22DCDC8D0034A1AB /* Spells.json in Resources */ = {isa = PBXBuildFile; fileRef = 62CEC05D22DCDC8D0034A1AB /* Spells.json */; };
+		62D0EDBE22E0C8A6006C732D /* SpellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0EDBC22E0C8A6006C732D /* SpellCell.swift */; };
+		62D0EDBF22E0C8A6006C732D /* SpellCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62D0EDBD22E0C8A6006C732D /* SpellCell.xib */; };
+		62D0EDC122E0D5D9006C732D /* TextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0EDC022E0D5D9006C732D /* TextLabel.swift */; };
+		62D0EDC722E1C314006C732D /* SpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0EDC522E1C314006C732D /* SpellVC.swift */; };
+		62D0EDC822E1C314006C732D /* SpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62D0EDC622E1C314006C732D /* SpellVC.xib */; };
+		62F6F9DE2304301A008C0D3F /* Hp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6F9DD2304301A008C0D3F /* Hp.swift */; };
+		62F6F9E12304308C008C0D3F /* NSRegularExpression+matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6F9E02304308C008C0D3F /* NSRegularExpression+matches.swift */; };
+		62F6F9E3230439EF008C0D3F /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6F9E2230439EF008C0D3F /* Alignment.swift */; };
+		62F6F9E52304411B008C0D3F /* Monster+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6F9E42304411B008C0D3F /* Monster+Type.swift */; };
+		62F6F9E823044B8B008C0D3F /* Monster+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6F9E723044B8B008C0D3F /* Monster+Size.swift */; };
+		62F6F9EA23044EC0008C0D3F /* Biom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6F9E923044EC0008C0D3F /* Biom.swift */; };
+		62F6F9EC230455CB008C0D3F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F6F9EB230455CB008C0D3F /* Monster.swift */; };
+		62FCF483231521D8000E36A3 /* SpellBookListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCF482231521D8000E36A3 /* SpellBookListOutput.swift */; };
+		62FCF485231521F8000E36A3 /* SpellBookListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCF484231521F8000E36A3 /* SpellBookListPresenter.swift */; };
+		62FCF48723152212000E36A3 /* SpellBookListInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FCF48623152212000E36A3 /* SpellBookListInput.swift */; };
+		62FE9866232B9DEE00C8B648 /* CustomTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE9865232B9DEE00C8B648 /* CustomTB.swift */; };
+		62FE9868232BBA2200C8B648 /* CustomNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE9867232BBA2200C8B648 /* CustomNC.swift */; };
+		B126017B25D609608C966CAD /* Pods_DnDSpells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940E1011993B74882DCADA09 /* Pods_DnDSpells.framework */; };
+		B9122C20231C2C4200DE9A53 /* Spell+Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9122C1F231C2C4200DE9A53 /* Spell+Exported.swift */; };
+		B92FDB3D22D9D9CD003CCF05 /* AddSpell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92FDB3C22D9D9CD003CCF05 /* AddSpell.storyboard */; };
+		B92FDB4322D9DA31003CCF05 /* LevelSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92FDB4122D9DA31003CCF05 /* LevelSpellVC.swift */; };
+		B92FDB4422D9DA31003CCF05 /* LevelSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92FDB4222D9DA31003CCF05 /* LevelSpellVC.xib */; };
+		B92FDB4722D9DA7B003CCF05 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92FDB4622D9DA7B003CCF05 /* NextButton.swift */; };
+		B92FDB4A22D9E951003CCF05 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92FDB4922D9E951003CCF05 /* TitleLabel.swift */; };
+		B92FDB4D22DB73F6003CCF05 /* AddSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92FDB4B22DB73F6003CCF05 /* AddSpellVC.swift */; };
+		B92FDB4E22DB73F6003CCF05 /* AddSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92FDB4C22DB73F6003CCF05 /* AddSpellVC.xib */; };
+		B939714E22DB93BB001EC8ED /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939714822DB93BB001EC8ED /* ValidationError.swift */; };
+		B939714F22DB93BB001EC8ED /* FormFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939714922DB93BB001EC8ED /* FormFieldDelegate.swift */; };
+		B939715022DB93BB001EC8ED /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939714A22DB93BB001EC8ED /* Validations.swift */; };
+		B939715122DB93BB001EC8ED /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939714B22DB93BB001EC8ED /* FormField.swift */; };
+		B939715222DB93BB001EC8ED /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939714C22DB93BB001EC8ED /* FormTextField.swift */; };
+		B939715322DB93BB001EC8ED /* FormFieldError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939714D22DB93BB001EC8ED /* FormFieldError.swift */; };
+		B939715522DB9445001EC8ED /* SelectionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939715422DB9445001EC8ED /* SelectionAnimation.swift */; };
+		B939715722DB9A5D001EC8ED /* NameSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939715622DB9A5D001EC8ED /* NameSpellInput.swift */; };
+		B939715922DB9A7F001EC8ED /* SchoolSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939715822DB9A7F001EC8ED /* SchoolSpellInput.swift */; };
+		B939715B22DB9AA3001EC8ED /* ActionSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939715A22DB9AA3001EC8ED /* ActionSpellInput.swift */; };
+		B939715D22DB9AC7001EC8ED /* RangeSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939715C22DB9AC7001EC8ED /* RangeSpellInput.swift */; };
+		B939715F22DB9AFC001EC8ED /* ComponentSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939715E22DB9AFC001EC8ED /* ComponentSpellInput.swift */; };
+		B939716122DB9B18001EC8ED /* DurationSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939716022DB9B18001EC8ED /* DurationSpellInput.swift */; };
+		B939716322DB9B3F001EC8ED /* DescriptionSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939716222DB9B3F001EC8ED /* DescriptionSpellInput.swift */; };
+		B939716522DB9B63001EC8ED /* ClassSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939716422DB9B63001EC8ED /* ClassSpellInput.swift */; };
+		B939716722DB9C25001EC8ED /* LevelSpellInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939716622DB9C25001EC8ED /* LevelSpellInput.swift */; };
+		B939716922DBA1D3001EC8ED /* LevelSpellOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939716822DBA1D3001EC8ED /* LevelSpellOutput.swift */; };
+		B939716D22DBA26A001EC8ED /* LevelSpellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B939716C22DBA26A001EC8ED /* LevelSpellPresenter.swift */; };
+		B969D60C22DF1DE3006CA052 /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969D60B22DF1DE3006CA052 /* Profession.swift */; };
+		B969D60E22DF3BCE006CA052 /* Profession.json in Resources */ = {isa = PBXBuildFile; fileRef = B969D60D22DF3BCE006CA052 /* Profession.json */; };
+		B969D61022DF3DA5006CA052 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969D60F22DF3DA5006CA052 /* Spell.swift */; };
+		B969D61222DF411D006CA052 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969D61122DF411D006CA052 /* Component.swift */; };
+		B969D61422DF44D9006CA052 /* Components.json in Resources */ = {isa = PBXBuildFile; fileRef = B969D61322DF44D9006CA052 /* Components.json */; };
+		B9BD5CE722D8C8890041B9F7 /* MenuCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD5CE322D8C8890041B9F7 /* MenuCollectionCell.swift */; };
+		B9BD5CE822D8C8890041B9F7 /* MenuCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD5CE422D8C8890041B9F7 /* MenuCollectionDelegate.swift */; };
+		B9BD5CE922D8C8890041B9F7 /* MenuCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD5CE522D8C8890041B9F7 /* MenuCollection.swift */; };
+		B9BD5CEA22D8C8890041B9F7 /* MenuCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9BD5CE622D8C8890041B9F7 /* MenuCollectionCell.xib */; };
+		B9BD5CEC22D8C92C0041B9F7 /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD5CEB22D8C92C0041B9F7 /* UIColor+theme.swift */; };
+		B9C8548A22DB8E44000D292E /* NameSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8548822DB8E44000D292E /* NameSpellVC.swift */; };
+		B9C8548B22DB8E44000D292E /* NameSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C8548922DB8E44000D292E /* NameSpellVC.xib */; };
+		B9C8549F22DB8EBC000D292E /* SchoolSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C8549D22DB8EBC000D292E /* SchoolSpellVC.swift */; };
+		B9C854A022DB8EBC000D292E /* SchoolSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C8549E22DB8EBC000D292E /* SchoolSpellVC.xib */; };
+		B9C854A422DB8ED3000D292E /* ActionSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C854A222DB8ED3000D292E /* ActionSpellVC.swift */; };
+		B9C854A522DB8ED3000D292E /* ActionSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C854A322DB8ED3000D292E /* ActionSpellVC.xib */; };
+		B9C854A822DB8EE7000D292E /* RangeSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C854A622DB8EE7000D292E /* RangeSpellVC.swift */; };
+		B9C854A922DB8EE7000D292E /* RangeSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C854A722DB8EE7000D292E /* RangeSpellVC.xib */; };
+		B9C854AC22DB8EFA000D292E /* ComponentSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C854AA22DB8EFA000D292E /* ComponentSpellVC.swift */; };
+		B9C854AD22DB8EFA000D292E /* ComponentSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C854AB22DB8EFA000D292E /* ComponentSpellVC.xib */; };
+		B9C854B022DB8F14000D292E /* DurationSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C854AE22DB8F14000D292E /* DurationSpellVC.swift */; };
+		B9C854B122DB8F14000D292E /* DurationSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C854AF22DB8F14000D292E /* DurationSpellVC.xib */; };
+		B9C854B422DB8F2C000D292E /* DescriptionSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C854B222DB8F2C000D292E /* DescriptionSpellVC.swift */; };
+		B9C854B522DB8F2C000D292E /* DescriptionSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C854B322DB8F2C000D292E /* DescriptionSpellVC.xib */; };
+		B9C854B822DB8F40000D292E /* ClassSpellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C854B622DB8F40000D292E /* ClassSpellVC.swift */; };
+		B9C854B922DB8F40000D292E /* ClassSpellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C854B722DB8F40000D292E /* ClassSpellVC.xib */; };
+		B9C854BE22DB9238000D292E /* TextFieldWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C854BD22DB9238000D292E /* TextFieldWithAnimation.swift */; };
+		B9F958D922DFC79000EAF8B1 /* NameSpellOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F958D822DFC79000EAF8B1 /* NameSpellOutput.swift */; };
+		B9F958DB22DFC84600EAF8B1 /* NameSpellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F958DA22DFC84600EAF8B1 /* NameSpellPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		620BD08C2313D6DA0051D47D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CEC01922D739180034A1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 620BD0812313D6DA0051D47D;
+			remoteInfo = CharacterExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		620BD0922313D6DA0051D47D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				620BD08E2313D6DA0051D47D /* CharacterExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B9507265B73DCFD64044D5B /* Pods-DnDSpells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DnDSpells.debug.xcconfig"; path = "Target Support Files/Pods-DnDSpells/Pods-DnDSpells.debug.xcconfig"; sourceTree = "<group>"; };
+		62059B5F230E73A20095F67D /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		62059B60230E73A20095F67D /* FilterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterVC.xib; sourceTree = "<group>"; };
+		62059B63230E73B00095F67D /* FilterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInput.swift; sourceTree = "<group>"; };
+		62059B66230E875D0095F67D /* IOTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOTagCell.swift; sourceTree = "<group>"; };
+		62059B67230E875D0095F67D /* IOTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IOTagCell.xib; sourceTree = "<group>"; };
+		62059B68230E875D0095F67D /* IOTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOTags.swift; sourceTree = "<group>"; };
+		62059B6C230E9C2A0095F67D /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		62059B6E230EA60F0095F67D /* SpellListInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListInput.swift; sourceTree = "<group>"; };
+		62059B70230ECC0E0095F67D /* SpellCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCell2.swift; sourceTree = "<group>"; };
+		62059B71230ECC0E0095F67D /* SpellCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellCell2.xib; sourceTree = "<group>"; };
+		620BD07A2313CF100051D47D /* ListSpellBooksAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSpellBooksAC.swift; sourceTree = "<group>"; };
+		620BD07B2313CF100051D47D /* ListSpellBooksAC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListSpellBooksAC.xib; sourceTree = "<group>"; };
+		620BD0822313D6DA0051D47D /* CharacterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CharacterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		620BD0832313D6DA0051D47D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		620BD0862313D6DA0051D47D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		620BD0892313D6DA0051D47D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		620BD08B2313D6DA0051D47D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620BD0932313D7C70051D47D /* DnDSpells.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DnDSpells.entitlements; sourceTree = "<group>"; };
+		620BD0942313D80A0051D47D /* CharacterExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CharacterExtension.entitlements; sourceTree = "<group>"; };
+		620BD0962313EF540051D47D /* SpellListOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListOutput.swift; sourceTree = "<group>"; };
+		620BD0982313F0500051D47D /* SpellListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListPresenter.swift; sourceTree = "<group>"; };
+		6211FBBA23018AAD001B2DBF /* SpellService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellService.swift; sourceTree = "<group>"; };
+		6211FBBF2301A7C7001B2DBF /* SpellBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBook.swift; sourceTree = "<group>"; };
+		6211FBC42301A9FB001B2DBF /* SpellBookListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookListVC.swift; sourceTree = "<group>"; };
+		6211FBC52301A9FB001B2DBF /* SpellBookListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellBookListVC.xib; sourceTree = "<group>"; };
+		6218D065232F7DB300B8AB3B /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		6219BCDE230BE9E3006EF1BE /* MonsterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterService.swift; sourceTree = "<group>"; };
+		6219BCE0230BF336006EF1BE /* Monster+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Monster+Action.swift"; sourceTree = "<group>"; };
+		6219BCE2230BF44C006EF1BE /* Monster+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Monster+Location.swift"; sourceTree = "<group>"; };
+		6219BCE4230BFB6B006EF1BE /* MonsterJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterJSON.swift; sourceTree = "<group>"; };
+		6219BCEC230C0BC5006EF1BE /* Monsters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Monsters.json; sourceTree = "<group>"; };
+		6219BCEE230C254C006EF1BE /* Spells.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spells.realm; sourceTree = "<group>"; };
+		621A53B62301CBF40099F7F9 /* AddSpellBookOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellBookOutput.swift; sourceTree = "<group>"; };
+		621A53B82301CC510099F7F9 /* AddSpellBookInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellBookInput.swift; sourceTree = "<group>"; };
+		621A53BA2301CEF50099F7F9 /* AddSpellBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellBookPresenter.swift; sourceTree = "<group>"; };
+		623E66F7232BDB4A00FD4310 /* SpellListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpellListVC.xib; sourceTree = "<group>"; };
+		623E66F9232BDB5F00FD4310 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		623E66FA232BDB5F00FD4310 /* Header1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header1.swift; sourceTree = "<group>"; };
+		623E66FB232BDB5F00FD4310 /* Header2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header2.swift; sourceTree = "<group>"; };
+		623E66FC232BDB5F00FD4310 /* Text2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text2.swift; sourceTree = "<group>"; };
+		6247C6492302A7FD007790DB /* SourceMonsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceMonsters.swift; sourceTree = "<group>"; };
+		6247C64D2302B58D007790DB /* Monsters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monsters.txt; sourceTree = "<group>"; };
+		6260F6CE2301ABAC004EDED1 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		6260F6CF2301ABAC004EDED1 /* BookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		6260F6D52301C1EA004EDED1 /* AddSpellBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellBookVC.swift; sourceTree = "<group>"; };
+		6260F6D62301C1EA004EDED1 /* AddSpellBookVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSpellBookVC.xib; sourceTree = "<group>"; };
+		626F45D722E0661600A00BF6 /* SchoolSpellOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSpellOutput.swift; sourceTree = "<group>"; };
+		626F45D922E0663300A00BF6 /* SchoolSpellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSpellPresenter.swift; sourceTree = "<group>"; };
+		626F45DD22E0B9AF00A00BF6 /* SpellListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListVC.swift; sourceTree = "<group>"; };
+		629059B7230A8C57000B888F /* String+html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+html.swift"; sourceTree = "<group>"; };
+		629B41DA23180595000EFC6B /* Imported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imported.swift; sourceTree = "<group>"; };
+		629B41DC231805AA000EFC6B /* Exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exported.swift; sourceTree = "<group>"; };
+		62A6B3F523142CF000E1745F /* AddSpellToBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellToBookVC.swift; sourceTree = "<group>"; };
+		62A6B3F623142CF000E1745F /* AddSpellToBookVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSpellToBookVC.xib; sourceTree = "<group>"; };
+		62A6B3F923142D0B00E1745F /* AddSpellToBookInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellToBookInput.swift; sourceTree = "<group>"; };
+		62A6B3FB23142E3300E1745F /* AddSpellToBookOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellToBookOutput.swift; sourceTree = "<group>"; };
+		62A6B3FD23142F2C00E1745F /* AddSpellToBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellToBookPresenter.swift; sourceTree = "<group>"; };
+		62B0B56723152C7E00E18C23 /* SpellBookOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookOutput.swift; sourceTree = "<group>"; };
+		62B0B56923152C8B00E18C23 /* SpellBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookPresenter.swift; sourceTree = "<group>"; };
+		62B0B56B2315334500E18C23 /* SpellBookInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookInput.swift; sourceTree = "<group>"; };
+		62B0B56D2315336500E18C23 /* SpellBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookVC.swift; sourceTree = "<group>"; };
+		62B0B56E2315336500E18C23 /* SpellBookVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellBookVC.xib; sourceTree = "<group>"; };
+		62B0B57123153AB100E18C23 /* SpellCellTouches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCellTouches.swift; sourceTree = "<group>"; };
+		62B598BD23278FAD00625AEF /* Example.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Example.pdf; sourceTree = "<group>"; };
+		62B9351D22FB07200009CB7F /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		62BBD55A2327A456002473B5 /* PrinterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterVC.swift; sourceTree = "<group>"; };
+		62BBD55B2327A456002473B5 /* PrinterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrinterVC.xib; sourceTree = "<group>"; };
+		62BBD55E2327B021002473B5 /* SpellCardPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCardPDF.swift; sourceTree = "<group>"; };
+		62CEC02122D739180034A1AB /* DnDSpells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnDSpells.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CEC02422D739180034A1AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62CEC02622D739180034A1AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62CEC02922D739180034A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62CEC02B22D7391E0034A1AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62CEC02E22D7391E0034A1AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62CEC03022D7391E0034A1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CEC04D22DC9D640034A1AB /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		62CEC05322DCB4870034A1AB /* Books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
+		62CEC05522DCB9700034A1AB /* Schools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Schools.json; sourceTree = "<group>"; };
+		62CEC05722DCB9830034A1AB /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		62CEC05922DCC3940034A1AB /* SpellJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellJSON.swift; sourceTree = "<group>"; };
+		62CEC05D22DCDC8D0034A1AB /* Spells.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spells.json; sourceTree = "<group>"; };
+		62D0EDBC22E0C8A6006C732D /* SpellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCell.swift; sourceTree = "<group>"; };
+		62D0EDBD22E0C8A6006C732D /* SpellCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellCell.xib; sourceTree = "<group>"; };
+		62D0EDC022E0D5D9006C732D /* TextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
+		62D0EDC522E1C314006C732D /* SpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellVC.swift; sourceTree = "<group>"; };
+		62D0EDC622E1C314006C732D /* SpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpellVC.xib; sourceTree = "<group>"; };
+		62F6F9DD2304301A008C0D3F /* Hp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hp.swift; sourceTree = "<group>"; };
+		62F6F9E02304308C008C0D3F /* NSRegularExpression+matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+matches.swift"; sourceTree = "<group>"; };
+		62F6F9E2230439EF008C0D3F /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		62F6F9E42304411B008C0D3F /* Monster+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Monster+Type.swift"; sourceTree = "<group>"; };
+		62F6F9E723044B8B008C0D3F /* Monster+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Monster+Size.swift"; sourceTree = "<group>"; };
+		62F6F9E923044EC0008C0D3F /* Biom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biom.swift; sourceTree = "<group>"; };
+		62F6F9EB230455CB008C0D3F /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		62FCF482231521D8000E36A3 /* SpellBookListOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookListOutput.swift; sourceTree = "<group>"; };
+		62FCF484231521F8000E36A3 /* SpellBookListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookListPresenter.swift; sourceTree = "<group>"; };
+		62FCF48623152212000E36A3 /* SpellBookListInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellBookListInput.swift; sourceTree = "<group>"; };
+		62FE9865232B9DEE00C8B648 /* CustomTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTB.swift; sourceTree = "<group>"; };
+		62FE9867232BBA2200C8B648 /* CustomNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNC.swift; sourceTree = "<group>"; };
+		940E1011993B74882DCADA09 /* Pods_DnDSpells.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DnDSpells.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B532ABC301F348036BBB7A8A /* Pods-DnDSpells.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DnDSpells.release.xcconfig"; path = "Target Support Files/Pods-DnDSpells/Pods-DnDSpells.release.xcconfig"; sourceTree = "<group>"; };
+		B9122C1F231C2C4200DE9A53 /* Spell+Exported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spell+Exported.swift"; sourceTree = "<group>"; };
+		B92FDB3C22D9D9CD003CCF05 /* AddSpell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSpell.storyboard; sourceTree = "<group>"; };
+		B92FDB4122D9DA31003CCF05 /* LevelSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSpellVC.swift; sourceTree = "<group>"; };
+		B92FDB4222D9DA31003CCF05 /* LevelSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelSpellVC.xib; sourceTree = "<group>"; };
+		B92FDB4622D9DA7B003CCF05 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		B92FDB4922D9E951003CCF05 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		B92FDB4B22DB73F6003CCF05 /* AddSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpellVC.swift; sourceTree = "<group>"; };
+		B92FDB4C22DB73F6003CCF05 /* AddSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSpellVC.xib; sourceTree = "<group>"; };
+		B939714822DB93BB001EC8ED /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		B939714922DB93BB001EC8ED /* FormFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldDelegate.swift; sourceTree = "<group>"; };
+		B939714A22DB93BB001EC8ED /* Validations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		B939714B22DB93BB001EC8ED /* FormField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		B939714C22DB93BB001EC8ED /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		B939714D22DB93BB001EC8ED /* FormFieldError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldError.swift; sourceTree = "<group>"; };
+		B939715422DB9445001EC8ED /* SelectionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAnimation.swift; sourceTree = "<group>"; };
+		B939715622DB9A5D001EC8ED /* NameSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpellInput.swift; sourceTree = "<group>"; };
+		B939715822DB9A7F001EC8ED /* SchoolSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSpellInput.swift; sourceTree = "<group>"; };
+		B939715A22DB9AA3001EC8ED /* ActionSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSpellInput.swift; sourceTree = "<group>"; };
+		B939715C22DB9AC7001EC8ED /* RangeSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSpellInput.swift; sourceTree = "<group>"; };
+		B939715E22DB9AFC001EC8ED /* ComponentSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSpellInput.swift; sourceTree = "<group>"; };
+		B939716022DB9B18001EC8ED /* DurationSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationSpellInput.swift; sourceTree = "<group>"; };
+		B939716222DB9B3F001EC8ED /* DescriptionSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSpellInput.swift; sourceTree = "<group>"; };
+		B939716422DB9B63001EC8ED /* ClassSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSpellInput.swift; sourceTree = "<group>"; };
+		B939716622DB9C25001EC8ED /* LevelSpellInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSpellInput.swift; sourceTree = "<group>"; };
+		B939716822DBA1D3001EC8ED /* LevelSpellOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSpellOutput.swift; sourceTree = "<group>"; };
+		B939716C22DBA26A001EC8ED /* LevelSpellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSpellPresenter.swift; sourceTree = "<group>"; };
+		B969D60B22DF1DE3006CA052 /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
+		B969D60D22DF3BCE006CA052 /* Profession.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Profession.json; sourceTree = "<group>"; };
+		B969D60F22DF3DA5006CA052 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		B969D61122DF411D006CA052 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		B969D61322DF44D9006CA052 /* Components.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Components.json; sourceTree = "<group>"; };
+		B9BD5CE322D8C8890041B9F7 /* MenuCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionCell.swift; sourceTree = "<group>"; };
+		B9BD5CE422D8C8890041B9F7 /* MenuCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollectionDelegate.swift; sourceTree = "<group>"; };
+		B9BD5CE522D8C8890041B9F7 /* MenuCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCollection.swift; sourceTree = "<group>"; };
+		B9BD5CE622D8C8890041B9F7 /* MenuCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCollectionCell.xib; sourceTree = "<group>"; };
+		B9BD5CEB22D8C92C0041B9F7 /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
+		B9C8548822DB8E44000D292E /* NameSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpellVC.swift; sourceTree = "<group>"; };
+		B9C8548922DB8E44000D292E /* NameSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameSpellVC.xib; sourceTree = "<group>"; };
+		B9C8549D22DB8EBC000D292E /* SchoolSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSpellVC.swift; sourceTree = "<group>"; };
+		B9C8549E22DB8EBC000D292E /* SchoolSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchoolSpellVC.xib; sourceTree = "<group>"; };
+		B9C854A222DB8ED3000D292E /* ActionSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSpellVC.swift; sourceTree = "<group>"; };
+		B9C854A322DB8ED3000D292E /* ActionSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionSpellVC.xib; sourceTree = "<group>"; };
+		B9C854A622DB8EE7000D292E /* RangeSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSpellVC.swift; sourceTree = "<group>"; };
+		B9C854A722DB8EE7000D292E /* RangeSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RangeSpellVC.xib; sourceTree = "<group>"; };
+		B9C854AA22DB8EFA000D292E /* ComponentSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentSpellVC.swift; sourceTree = "<group>"; };
+		B9C854AB22DB8EFA000D292E /* ComponentSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentSpellVC.xib; sourceTree = "<group>"; };
+		B9C854AE22DB8F14000D292E /* DurationSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationSpellVC.swift; sourceTree = "<group>"; };
+		B9C854AF22DB8F14000D292E /* DurationSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DurationSpellVC.xib; sourceTree = "<group>"; };
+		B9C854B222DB8F2C000D292E /* DescriptionSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionSpellVC.swift; sourceTree = "<group>"; };
+		B9C854B322DB8F2C000D292E /* DescriptionSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionSpellVC.xib; sourceTree = "<group>"; };
+		B9C854B622DB8F40000D292E /* ClassSpellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSpellVC.swift; sourceTree = "<group>"; };
+		B9C854B722DB8F40000D292E /* ClassSpellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassSpellVC.xib; sourceTree = "<group>"; };
+		B9C854BD22DB9238000D292E /* TextFieldWithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithAnimation.swift; sourceTree = "<group>"; };
+		B9F958D822DFC79000EAF8B1 /* NameSpellOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpellOutput.swift; sourceTree = "<group>"; };
+		B9F958DA22DFC84600EAF8B1 /* NameSpellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpellPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		620BD07F2313D6DA0051D47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620BD0842313D6DA0051D47D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CEC01E22D739180034A1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B126017B25D609608C966CAD /* Pods_DnDSpells.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62059B5C230E736E0095F67D /* FilterSpell */ = {
+			isa = PBXGroup;
+			children = (
+				62059B5D230E737E0095F67D /* Presenter */,
+				62059B5E230E73860095F67D /* View */,
+				62059B6C230E9C2A0095F67D /* Filter.swift */,
+			);
+			path = FilterSpell;
+			sourceTree = "<group>";
+		};
+		62059B5D230E737E0095F67D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		62059B5E230E73860095F67D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62059B63230E73B00095F67D /* FilterInput.swift */,
+				62059B5F230E73A20095F67D /* FilterVC.swift */,
+				62059B60230E73A20095F67D /* FilterVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62059B65230E87420095F67D /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				62059B66230E875D0095F67D /* IOTagCell.swift */,
+				62059B67230E875D0095F67D /* IOTagCell.xib */,
+				62059B68230E875D0095F67D /* IOTags.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		620BD0852313D6DA0051D47D /* CharacterExtension */ = {
+			isa = PBXGroup;
+			children = (
+				620BD0942313D80A0051D47D /* CharacterExtension.entitlements */,
+				620BD0862313D6DA0051D47D /* TodayViewController.swift */,
+				620BD0882313D6DA0051D47D /* MainInterface.storyboard */,
+				620BD08B2313D6DA0051D47D /* Info.plist */,
+			);
+			path = CharacterExtension;
+			sourceTree = "<group>";
+		};
+		620BD0952313EF1F0051D47D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				620BD0962313EF540051D47D /* SpellListOutput.swift */,
+				620BD0982313F0500051D47D /* SpellListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6211FBBE2301A7BC001B2DBF /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				6211FBBF2301A7C7001B2DBF /* SpellBook.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		6211FBC12301A9AB001B2DBF /* SpellbooksList */ = {
+			isa = PBXGroup;
+			children = (
+				62B0B56423152C5F00E18C23 /* SpellBook */,
+				6260F6D32301C1AA004EDED1 /* Add */,
+				6211FBC22301A9D5001B2DBF /* List */,
+			);
+			path = SpellbooksList;
+			sourceTree = "<group>";
+		};
+		6211FBC22301A9D5001B2DBF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				62FCF4812315214E000E36A3 /* Presenter */,
+				6211FBC32301A9E2001B2DBF /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		6211FBC32301A9E2001B2DBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6211FBC82301AB4E001B2DBF /* Cell */,
+				62FCF48623152212000E36A3 /* SpellBookListInput.swift */,
+				6211FBC42301A9FB001B2DBF /* SpellBookListVC.swift */,
+				6211FBC52301A9FB001B2DBF /* SpellBookListVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6211FBC82301AB4E001B2DBF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6260F6CE2301ABAC004EDED1 /* BookCell.swift */,
+				6260F6CF2301ABAC004EDED1 /* BookCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6211FBC92301AB57001B2DBF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				62D0EDBC22E0C8A6006C732D /* SpellCell.swift */,
+				62D0EDBD22E0C8A6006C732D /* SpellCell.xib */,
+				62059B70230ECC0E0095F67D /* SpellCell2.swift */,
+				62059B71230ECC0E0095F67D /* SpellCell2.xib */,
+				62B0B57123153AB100E18C23 /* SpellCellTouches.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		621A53B52301CBE40099F7F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				621A53B62301CBF40099F7F9 /* AddSpellBookOutput.swift */,
+				621A53BA2301CEF50099F7F9 /* AddSpellBookPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6247C6482302A7CB007790DB /* Monster */ = {
+			isa = PBXGroup;
+			children = (
+				6247C6492302A7FD007790DB /* SourceMonsters.swift */,
+				62F6F9DD2304301A008C0D3F /* Hp.swift */,
+				62F6F9E2230439EF008C0D3F /* Alignment.swift */,
+				62F6F9E923044EC0008C0D3F /* Biom.swift */,
+				62F6F9EB230455CB008C0D3F /* Monster.swift */,
+				62F6F9E42304411B008C0D3F /* Monster+Type.swift */,
+				62F6F9E723044B8B008C0D3F /* Monster+Size.swift */,
+				6219BCE0230BF336006EF1BE /* Monster+Action.swift */,
+				6219BCE2230BF44C006EF1BE /* Monster+Location.swift */,
+				6219BCE4230BFB6B006EF1BE /* MonsterJSON.swift */,
+			);
+			path = Monster;
+			sourceTree = "<group>";
+		};
+		6260F6D32301C1AA004EDED1 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				621A53B52301CBE40099F7F9 /* Presenter */,
+				6260F6D42301C1B1004EDED1 /* View */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		6260F6D42301C1B1004EDED1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				621A53B82301CC510099F7F9 /* AddSpellBookInput.swift */,
+				6260F6D52301C1EA004EDED1 /* AddSpellBookVC.swift */,
+				6260F6D62301C1EA004EDED1 /* AddSpellBookVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		626F45D622E0660800A00BF6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				626F45D722E0661600A00BF6 /* SchoolSpellOutput.swift */,
+				626F45D922E0663300A00BF6 /* SchoolSpellPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		626F45DB22E0B97F00A00BF6 /* ShowSpell */ = {
+			isa = PBXGroup;
+			children = (
+				62D0EDC422E1C2F8006C732D /* Spell */,
+				626F45DC22E0B98D00A00BF6 /* List */,
+			);
+			path = ShowSpell;
+			sourceTree = "<group>";
+		};
+		626F45DC22E0B98D00A00BF6 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				620BD0952313EF1F0051D47D /* Presenter */,
+				626F45E122E0B9C800A00BF6 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		626F45E122E0B9C800A00BF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6211FBC92301AB57001B2DBF /* Cell */,
+				62059B6E230EA60F0095F67D /* SpellListInput.swift */,
+				626F45DD22E0B9AF00A00BF6 /* SpellListVC.swift */,
+				623E66F7232BDB4A00FD4310 /* SpellListVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		629B41D6231802CC000EFC6B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				629B41D7231802DC000EFC6B /* Spells */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		629B41D7231802DC000EFC6B /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				629B41D823180305000EFC6B /* Resources */,
+				62CEC04422D773EA0034A1AB /* Models */,
+				6211FBBA23018AAD001B2DBF /* SpellService.swift */,
+			);
+			path = Spells;
+			sourceTree = "<group>";
+		};
+		629B41D823180305000EFC6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62CEC05D22DCDC8D0034A1AB /* Spells.json */,
+				B969D60D22DF3BCE006CA052 /* Profession.json */,
+				B969D61322DF44D9006CA052 /* Components.json */,
+				62CEC05322DCB4870034A1AB /* Books.json */,
+				62CEC05522DCB9700034A1AB /* Schools.json */,
+				6219BCEE230C254C006EF1BE /* Spells.realm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62A6B3F223141B2000E1745F /* AddSpellToBook */ = {
+			isa = PBXGroup;
+			children = (
+				62A6B3F323142CCD00E1745F /* Presenter */,
+				62A6B3F423142CD200E1745F /* View */,
+			);
+			path = AddSpellToBook;
+			sourceTree = "<group>";
+		};
+		62A6B3F323142CCD00E1745F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				62A6B3FB23142E3300E1745F /* AddSpellToBookOutput.swift */,
+				62A6B3FD23142F2C00E1745F /* AddSpellToBookPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		62A6B3F423142CD200E1745F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62A6B3F923142D0B00E1745F /* AddSpellToBookInput.swift */,
+				62A6B3F523142CF000E1745F /* AddSpellToBookVC.swift */,
+				62A6B3F623142CF000E1745F /* AddSpellToBookVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62B0B56423152C5F00E18C23 /* SpellBook */ = {
+			isa = PBXGroup;
+			children = (
+				62B0B56623152C6A00E18C23 /* Presenter */,
+				62B0B56523152C6700E18C23 /* View */,
+			);
+			path = SpellBook;
+			sourceTree = "<group>";
+		};
+		62B0B56523152C6700E18C23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62B0B56B2315334500E18C23 /* SpellBookInput.swift */,
+				62B0B56D2315336500E18C23 /* SpellBookVC.swift */,
+				62B0B56E2315336500E18C23 /* SpellBookVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62B0B56623152C6A00E18C23 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				62B0B56723152C7E00E18C23 /* SpellBookOutput.swift */,
+				62B0B56923152C8B00E18C23 /* SpellBookPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		62B598BF2327A41C00625AEF /* Printer */ = {
+			isa = PBXGroup;
+			children = (
+				62BBD55A2327A456002473B5 /* PrinterVC.swift */,
+				62BBD55B2327A456002473B5 /* PrinterVC.xib */,
+				62BBD55E2327B021002473B5 /* SpellCardPDF.swift */,
+			);
+			path = Printer;
+			sourceTree = "<group>";
+		};
+		62CEC01822D739180034A1AB = {
+			isa = PBXGroup;
+			children = (
+				62CEC02322D739180034A1AB /* DnDSpells */,
+				620BD0852313D6DA0051D47D /* CharacterExtension */,
+				62CEC02222D739180034A1AB /* Products */,
+				FB91E638BB5A3EE0E5C1BA2F /* Pods */,
+				6A1A087308AC3B1A3F2EDE85 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62CEC02222D739180034A1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62CEC02122D739180034A1AB /* DnDSpells.app */,
+				620BD0822313D6DA0051D47D /* CharacterExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62CEC02322D739180034A1AB /* DnDSpells */ = {
+			isa = PBXGroup;
+			children = (
+				620BD0932313D7C70051D47D /* DnDSpells.entitlements */,
+				629B41D6231802CC000EFC6B /* Services */,
+				B92FDB3E22D9D9E0003CCF05 /* Stories */,
+				B9BD5CD922D8C8440041B9F7 /* Core */,
+				B9BD5CD222D8951F0041B9F7 /* Resources */,
+				62CEC03A22D76C9C0034A1AB /* Models */,
+				62CEC02422D739180034A1AB /* AppDelegate.swift */,
+				62CEC02622D739180034A1AB /* ViewController.swift */,
+				62CEC02822D739180034A1AB /* Main.storyboard */,
+				62B9351D22FB07200009CB7F /* Test.storyboard */,
+				62CEC02B22D7391E0034A1AB /* Assets.xcassets */,
+				62CEC02D22D7391E0034A1AB /* LaunchScreen.storyboard */,
+				62CEC03022D7391E0034A1AB /* Info.plist */,
+			);
+			path = DnDSpells;
+			sourceTree = "<group>";
+		};
+		62CEC03A22D76C9C0034A1AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6247C6482302A7CB007790DB /* Monster */,
+				6211FBBE2301A7BC001B2DBF /* Book */,
+				6219BCDE230BE9E3006EF1BE /* MonsterService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62CEC04422D773EA0034A1AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B969D60F22DF3DA5006CA052 /* Spell.swift */,
+				62CEC04D22DC9D640034A1AB /* Book.swift */,
+				62CEC05722DCB9830034A1AB /* School.swift */,
+				62CEC05922DCC3940034A1AB /* SpellJSON.swift */,
+				B969D60B22DF1DE3006CA052 /* Profession.swift */,
+				B969D61122DF411D006CA052 /* Component.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62D0EDC422E1C2F8006C732D /* Spell */ = {
+			isa = PBXGroup;
+			children = (
+				62D0EDC522E1C314006C732D /* SpellVC.swift */,
+				62D0EDC622E1C314006C732D /* SpellVC.xib */,
+			);
+			path = Spell;
+			sourceTree = "<group>";
+		};
+		62F6F9DF23043065008C0D3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				62F6F9E02304308C008C0D3F /* NSRegularExpression+matches.swift */,
+				629059B7230A8C57000B888F /* String+html.swift */,
+				B9122C1F231C2C4200DE9A53 /* Spell+Exported.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		62FCF4812315214E000E36A3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				62FCF482231521D8000E36A3 /* SpellBookListOutput.swift */,
+				62FCF484231521F8000E36A3 /* SpellBookListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6A1A087308AC3B1A3F2EDE85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				940E1011993B74882DCADA09 /* Pods_DnDSpells.framework */,
+				620BD0832313D6DA0051D47D /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B92FDB3E22D9D9E0003CCF05 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				62B598BF2327A41C00625AEF /* Printer */,
+				62A6B3F223141B2000E1745F /* AddSpellToBook */,
+				6211FBC12301A9AB001B2DBF /* SpellbooksList */,
+				62059B5C230E736E0095F67D /* FilterSpell */,
+				626F45DB22E0B97F00A00BF6 /* ShowSpell */,
+				B92FDB3F22D9D9F0003CCF05 /* AddSpell */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		B92FDB3F22D9D9F0003CCF05 /* AddSpell */ = {
+			isa = PBXGroup;
+			children = (
+				B92FDB4022D9DA18003CCF05 /* Level */,
+				B9C8548022DB8DBC000D292E /* Name */,
+				B9C8548222DB8DDA000D292E /* School */,
+				B9C8548322DB8DEA000D292E /* Action */,
+				B9C8548422DB8DF3000D292E /* Range */,
+				B9C8548522DB8DFA000D292E /* Component */,
+				B9C8548622DB8E04000D292E /* Duration */,
+				B9C8548122DB8DC2000D292E /* Description */,
+				B9C8548722DB8E0C000D292E /* Class */,
+				B92FDB3C22D9D9CD003CCF05 /* AddSpell.storyboard */,
+				B92FDB4B22DB73F6003CCF05 /* AddSpellVC.swift */,
+				B92FDB4C22DB73F6003CCF05 /* AddSpellVC.xib */,
+			);
+			path = AddSpell;
+			sourceTree = "<group>";
+		};
+		B92FDB4022D9DA18003CCF05 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				B9C854BB22DB8F6B000D292E /* Presenter */,
+				B9C854BA22DB8F63000D292E /* View */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		B92FDB4522D9DA65003CCF05 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B92FDB4622D9DA7B003CCF05 /* NextButton.swift */,
+				6218D065232F7DB300B8AB3B /* AddButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B92FDB4822D9E940003CCF05 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				B92FDB4922D9E951003CCF05 /* TitleLabel.swift */,
+				623E66FA232BDB5F00FD4310 /* Header1.swift */,
+				623E66FB232BDB5F00FD4310 /* Header2.swift */,
+				623E66F9232BDB5F00FD4310 /* Text.swift */,
+				623E66FC232BDB5F00FD4310 /* Text2.swift */,
+				62D0EDC022E0D5D9006C732D /* TextLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		B939714722DB93A0001EC8ED /* FormField */ = {
+			isa = PBXGroup;
+			children = (
+				B939714B22DB93BB001EC8ED /* FormField.swift */,
+				B939714922DB93BB001EC8ED /* FormFieldDelegate.swift */,
+				B939714D22DB93BB001EC8ED /* FormFieldError.swift */,
+				B939714C22DB93BB001EC8ED /* FormTextField.swift */,
+				B939714822DB93BB001EC8ED /* ValidationError.swift */,
+				B939714A22DB93BB001EC8ED /* Validations.swift */,
+			);
+			path = FormField;
+			sourceTree = "<group>";
+		};
+		B9BD5CD222D8951F0041B9F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6247C64D2302B58D007790DB /* Monsters.txt */,
+				62B598BD23278FAD00625AEF /* Example.pdf */,
+				6219BCEC230C0BC5006EF1BE /* Monsters.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9BD5CD922D8C8440041B9F7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				62059B65230E87420095F67D /* Tags */,
+				62F6F9DF23043065008C0D3F /* Extensions */,
+				B9C854BF22DB929D000D292E /* Protocols */,
+				B9C854BC22DB9212000D292E /* TextField */,
+				B92FDB4822D9E940003CCF05 /* Labels */,
+				B92FDB4522D9DA65003CCF05 /* Buttons */,
+				B9BD5CDA22D8C8520041B9F7 /* MenuCollection */,
+				B9BD5CEB22D8C92C0041B9F7 /* UIColor+theme.swift */,
+				620BD07A2313CF100051D47D /* ListSpellBooksAC.swift */,
+				620BD07B2313CF100051D47D /* ListSpellBooksAC.xib */,
+				62FE9865232B9DEE00C8B648 /* CustomTB.swift */,
+				62FE9867232BBA2200C8B648 /* CustomNC.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B9BD5CDA22D8C8520041B9F7 /* MenuCollection */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD5CE322D8C8890041B9F7 /* MenuCollectionCell.swift */,
+				B9BD5CE622D8C8890041B9F7 /* MenuCollectionCell.xib */,
+				B9BD5CE522D8C8890041B9F7 /* MenuCollection.swift */,
+				B9BD5CE422D8C8890041B9F7 /* MenuCollectionDelegate.swift */,
+			);
+			path = MenuCollection;
+			sourceTree = "<group>";
+		};
+		B9C8548022DB8DBC000D292E /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8548D22DB8E50000D292E /* Presenter */,
+				B9C8548C22DB8E4B000D292E /* View */,
+			);
+			path = Name;
+			sourceTree = "<group>";
+		};
+		B9C8548122DB8DC2000D292E /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8549B22DB8E96000D292E /* Presenter */,
+				B9C8549322DB8E74000D292E /* View */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		B9C8548222DB8DDA000D292E /* School */ = {
+			isa = PBXGroup;
+			children = (
+				626F45D622E0660800A00BF6 /* Presenter */,
+				B9C8548E22DB8E62000D292E /* View */,
+			);
+			path = School;
+			sourceTree = "<group>";
+		};
+		B9C8548322DB8DEA000D292E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8549622DB8E81000D292E /* Presenter */,
+				B9C8548F22DB8E67000D292E /* View */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		B9C8548422DB8DF3000D292E /* Range */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8549722DB8E84000D292E /* Presenter */,
+				B9C8549022DB8E6A000D292E /* View */,
+			);
+			path = Range;
+			sourceTree = "<group>";
+		};
+		B9C8548522DB8DFA000D292E /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8549822DB8E88000D292E /* Presenter */,
+				B9C8549122DB8E6E000D292E /* View */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		B9C8548622DB8E04000D292E /* Duration */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8549A22DB8E92000D292E /* Presenter */,
+				B9C8549222DB8E71000D292E /* View */,
+			);
+			path = Duration;
+			sourceTree = "<group>";
+		};
+		B9C8548722DB8E0C000D292E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				B9C8549C22DB8E9B000D292E /* Presenter */,
+				B9C8549422DB8E77000D292E /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		B9C8548C22DB8E4B000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939715622DB9A5D001EC8ED /* NameSpellInput.swift */,
+				B9C8548822DB8E44000D292E /* NameSpellVC.swift */,
+				B9C8548922DB8E44000D292E /* NameSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8548D22DB8E50000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B9F958D822DFC79000EAF8B1 /* NameSpellOutput.swift */,
+				B9F958DA22DFC84600EAF8B1 /* NameSpellPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C8548E22DB8E62000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939715822DB9A7F001EC8ED /* SchoolSpellInput.swift */,
+				B9C8549D22DB8EBC000D292E /* SchoolSpellVC.swift */,
+				B9C8549E22DB8EBC000D292E /* SchoolSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8548F22DB8E67000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939715A22DB9AA3001EC8ED /* ActionSpellInput.swift */,
+				B9C854A222DB8ED3000D292E /* ActionSpellVC.swift */,
+				B9C854A322DB8ED3000D292E /* ActionSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8549022DB8E6A000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939715C22DB9AC7001EC8ED /* RangeSpellInput.swift */,
+				B9C854A622DB8EE7000D292E /* RangeSpellVC.swift */,
+				B9C854A722DB8EE7000D292E /* RangeSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8549122DB8E6E000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939715E22DB9AFC001EC8ED /* ComponentSpellInput.swift */,
+				B9C854AA22DB8EFA000D292E /* ComponentSpellVC.swift */,
+				B9C854AB22DB8EFA000D292E /* ComponentSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8549222DB8E71000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939716022DB9B18001EC8ED /* DurationSpellInput.swift */,
+				B9C854AE22DB8F14000D292E /* DurationSpellVC.swift */,
+				B9C854AF22DB8F14000D292E /* DurationSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8549322DB8E74000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939716222DB9B3F001EC8ED /* DescriptionSpellInput.swift */,
+				B9C854B222DB8F2C000D292E /* DescriptionSpellVC.swift */,
+				B9C854B322DB8F2C000D292E /* DescriptionSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8549422DB8E77000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939716422DB9B63001EC8ED /* ClassSpellInput.swift */,
+				B9C854B622DB8F40000D292E /* ClassSpellVC.swift */,
+				B9C854B722DB8F40000D292E /* ClassSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C8549622DB8E81000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C8549722DB8E84000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C8549822DB8E88000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C8549A22DB8E92000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C8549B22DB8E96000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C8549C22DB8E9B000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C854BA22DB8F63000D292E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B939716622DB9C25001EC8ED /* LevelSpellInput.swift */,
+				B92FDB4122D9DA31003CCF05 /* LevelSpellVC.swift */,
+				B92FDB4222D9DA31003CCF05 /* LevelSpellVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C854BB22DB8F6B000D292E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B939716822DBA1D3001EC8ED /* LevelSpellOutput.swift */,
+				B939716C22DBA26A001EC8ED /* LevelSpellPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B9C854BC22DB9212000D292E /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				B9C854BD22DB9238000D292E /* TextFieldWithAnimation.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		B9C854BF22DB929D000D292E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B939714722DB93A0001EC8ED /* FormField */,
+				B939715422DB9445001EC8ED /* SelectionAnimation.swift */,
+				629B41DA23180595000EFC6B /* Imported.swift */,
+				629B41DC231805AA000EFC6B /* Exported.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FB91E638BB5A3EE0E5C1BA2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B9507265B73DCFD64044D5B /* Pods-DnDSpells.debug.xcconfig */,
+				B532ABC301F348036BBB7A8A /* Pods-DnDSpells.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		620BD0812313D6DA0051D47D /* CharacterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 620BD08F2313D6DA0051D47D /* Build configuration list for PBXNativeTarget "CharacterExtension" */;
+			buildPhases = (
+				620BD07E2313D6DA0051D47D /* Sources */,
+				620BD07F2313D6DA0051D47D /* Frameworks */,
+				620BD0802313D6DA0051D47D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CharacterExtension;
+			productName = CharacterExtension;
+			productReference = 620BD0822313D6DA0051D47D /* CharacterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		62CEC02022D739180034A1AB /* DnDSpells */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CEC03322D7391E0034A1AB /* Build configuration list for PBXNativeTarget "DnDSpells" */;
+			buildPhases = (
+				FC4403F6DE91161F857F2511 /* [CP] Check Pods Manifest.lock */,
+				62CEC01D22D739180034A1AB /* Sources */,
+				62CEC01E22D739180034A1AB /* Frameworks */,
+				62CEC01F22D739180034A1AB /* Resources */,
+				ABDE00A71A6BEF27842673B7 /* [CP] Embed Pods Frameworks */,
+				620BD0922313D6DA0051D47D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				620BD08D2313D6DA0051D47D /* PBXTargetDependency */,
+			);
+			name = DnDSpells;
+			productName = DnDSpells;
+			productReference = 62CEC02122D739180034A1AB /* DnDSpells.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62CEC01922D739180034A1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Сергей Мельников";
+				TargetAttributes = {
+					620BD0812313D6DA0051D47D = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					62CEC02022D739180034A1AB = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 62CEC01C22D739180034A1AB /* Build configuration list for PBXProject "DnDSpells" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62CEC01822D739180034A1AB;
+			productRefGroup = 62CEC02222D739180034A1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62CEC02022D739180034A1AB /* DnDSpells */,
+				620BD0812313D6DA0051D47D /* CharacterExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		620BD0802313D6DA0051D47D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620BD08A2313D6DA0051D47D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CEC01F22D739180034A1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C854A922DB8EE7000D292E /* RangeSpellVC.xib in Resources */,
+				6247C64E2302B58D007790DB /* Monsters.txt in Resources */,
+				B969D61422DF44D9006CA052 /* Components.json in Resources */,
+				B9C8548B22DB8E44000D292E /* NameSpellVC.xib in Resources */,
+				B969D60E22DF3BCE006CA052 /* Profession.json in Resources */,
+				62059B62230E73A20095F67D /* FilterVC.xib in Resources */,
+				62BBD55D2327A456002473B5 /* PrinterVC.xib in Resources */,
+				62B598BE23278FAD00625AEF /* Example.pdf in Resources */,
+				B9C854A522DB8ED3000D292E /* ActionSpellVC.xib in Resources */,
+				62059B73230ECC0E0095F67D /* SpellCell2.xib in Resources */,
+				B9C854B522DB8F2C000D292E /* DescriptionSpellVC.xib in Resources */,
+				B9C854B922DB8F40000D292E /* ClassSpellVC.xib in Resources */,
+				62B0B5702315336500E18C23 /* SpellBookVC.xib in Resources */,
+				B9BD5CEA22D8C8890041B9F7 /* MenuCollectionCell.xib in Resources */,
+				B9C854A022DB8EBC000D292E /* SchoolSpellVC.xib in Resources */,
+				623E66F8232BDB4B00FD4310 /* SpellListVC.xib in Resources */,
+				6211FBC72301A9FB001B2DBF /* SpellBookListVC.xib in Resources */,
+				6219BCED230C0BC5006EF1BE /* Monsters.json in Resources */,
+				620BD07D2313CF100051D47D /* ListSpellBooksAC.xib in Resources */,
+				B92FDB4422D9DA31003CCF05 /* LevelSpellVC.xib in Resources */,
+				62CEC02F22D7391E0034A1AB /* LaunchScreen.storyboard in Resources */,
+				62CEC05E22DCDC8D0034A1AB /* Spells.json in Resources */,
+				B9C854B122DB8F14000D292E /* DurationSpellVC.xib in Resources */,
+				B92FDB3D22D9D9CD003CCF05 /* AddSpell.storyboard in Resources */,
+				62059B6A230E875D0095F67D /* IOTagCell.xib in Resources */,
+				62CEC05422DCB4870034A1AB /* Books.json in Resources */,
+				62D0EDC822E1C314006C732D /* SpellVC.xib in Resources */,
+				6260F6D12301ABAC004EDED1 /* BookCell.xib in Resources */,
+				6219BCEF230C254C006EF1BE /* Spells.realm in Resources */,
+				B9C854AD22DB8EFA000D292E /* ComponentSpellVC.xib in Resources */,
+				62D0EDBF22E0C8A6006C732D /* SpellCell.xib in Resources */,
+				B92FDB4E22DB73F6003CCF05 /* AddSpellVC.xib in Resources */,
+				62A6B3F823142CF000E1745F /* AddSpellToBookVC.xib in Resources */,
+				62CEC02C22D7391E0034A1AB /* Assets.xcassets in Resources */,
+				6260F6D82301C1EA004EDED1 /* AddSpellBookVC.xib in Resources */,
+				62B9351E22FB07200009CB7F /* Test.storyboard in Resources */,
+				62CEC02A22D739180034A1AB /* Main.storyboard in Resources */,
+				62CEC05622DCB9700034A1AB /* Schools.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABDE00A71A6BEF27842673B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DnDSpells/Pods-DnDSpells-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DnDSpells/Pods-DnDSpells-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DnDSpells/Pods-DnDSpells-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4403F6DE91161F857F2511 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DnDSpells-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		620BD07E2313D6DA0051D47D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620BD0872313D6DA0051D47D /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CEC01D22D739180034A1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B0B56823152C7E00E18C23 /* SpellBookOutput.swift in Sources */,
+				62059B69230E875D0095F67D /* IOTagCell.swift in Sources */,
+				62059B61230E73A20095F67D /* FilterVC.swift in Sources */,
+				B939715122DB93BB001EC8ED /* FormField.swift in Sources */,
+				62B0B56C2315334500E18C23 /* SpellBookInput.swift in Sources */,
+				B92FDB4722D9DA7B003CCF05 /* NextButton.swift in Sources */,
+				B939716722DB9C25001EC8ED /* LevelSpellInput.swift in Sources */,
+				B969D61222DF411D006CA052 /* Component.swift in Sources */,
+				B939715222DB93BB001EC8ED /* FormTextField.swift in Sources */,
+				620BD0972313EF540051D47D /* SpellListOutput.swift in Sources */,
+				6219BCE3230BF44C006EF1BE /* Monster+Location.swift in Sources */,
+				62F6F9DE2304301A008C0D3F /* Hp.swift in Sources */,
+				B9C854B022DB8F14000D292E /* DurationSpellVC.swift in Sources */,
+				B939715522DB9445001EC8ED /* SelectionAnimation.swift in Sources */,
+				62A6B3FC23142E3300E1745F /* AddSpellToBookOutput.swift in Sources */,
+				62CEC04E22DC9D640034A1AB /* Book.swift in Sources */,
+				62CEC05A22DCC3940034A1AB /* SpellJSON.swift in Sources */,
+				62F6F9E3230439EF008C0D3F /* Alignment.swift in Sources */,
+				62FE9866232B9DEE00C8B648 /* CustomTB.swift in Sources */,
+				62CEC05822DCB9830034A1AB /* School.swift in Sources */,
+				620BD07C2313CF100051D47D /* ListSpellBooksAC.swift in Sources */,
+				62F6F9EC230455CB008C0D3F /* Monster.swift in Sources */,
+				62F6F9E12304308C008C0D3F /* NSRegularExpression+matches.swift in Sources */,
+				B9C854AC22DB8EFA000D292E /* ComponentSpellVC.swift in Sources */,
+				62F6F9E823044B8B008C0D3F /* Monster+Size.swift in Sources */,
+				62FE9868232BBA2200C8B648 /* CustomNC.swift in Sources */,
+				B9C854A422DB8ED3000D292E /* ActionSpellVC.swift in Sources */,
+				621A53B92301CC510099F7F9 /* AddSpellBookInput.swift in Sources */,
+				623E66FD232BDB5F00FD4310 /* Text.swift in Sources */,
+				6218D066232F7DB300B8AB3B /* AddButton.swift in Sources */,
+				6260F6D72301C1EA004EDED1 /* AddSpellBookVC.swift in Sources */,
+				621A53B72301CBF40099F7F9 /* AddSpellBookOutput.swift in Sources */,
+				62D0EDC722E1C314006C732D /* SpellVC.swift in Sources */,
+				62B0B56F2315336500E18C23 /* SpellBookVC.swift in Sources */,
+				62BBD55F2327B021002473B5 /* SpellCardPDF.swift in Sources */,
+				B9C854B422DB8F2C000D292E /* DescriptionSpellVC.swift in Sources */,
+				B9C854B822DB8F40000D292E /* ClassSpellVC.swift in Sources */,
+				B939716D22DBA26A001EC8ED /* LevelSpellPresenter.swift in Sources */,
+				B969D61022DF3DA5006CA052 /* Spell.swift in Sources */,
+				B9BD5CEC22D8C92C0041B9F7 /* UIColor+theme.swift in Sources */,
+				B9C8549F22DB8EBC000D292E /* SchoolSpellVC.swift in Sources */,
+				62A6B3F723142CF000E1745F /* AddSpellToBookVC.swift in Sources */,
+				62A6B3FE23142F2C00E1745F /* AddSpellToBookPresenter.swift in Sources */,
+				B939714E22DB93BB001EC8ED /* ValidationError.swift in Sources */,
+				623E66FF232BDB5F00FD4310 /* Header2.swift in Sources */,
+				6247C64A2302A7FD007790DB /* SourceMonsters.swift in Sources */,
+				6219BCE5230BFB6B006EF1BE /* MonsterJSON.swift in Sources */,
+				B939715322DB93BB001EC8ED /* FormFieldError.swift in Sources */,
+				B9122C20231C2C4200DE9A53 /* Spell+Exported.swift in Sources */,
+				B939715F22DB9AFC001EC8ED /* ComponentSpellInput.swift in Sources */,
+				62059B6D230E9C2A0095F67D /* Filter.swift in Sources */,
+				6211FBBB23018AAD001B2DBF /* SpellService.swift in Sources */,
+				B939715B22DB9AA3001EC8ED /* ActionSpellInput.swift in Sources */,
+				6260F6D02301ABAC004EDED1 /* BookCell.swift in Sources */,
+				62059B6B230E875D0095F67D /* IOTags.swift in Sources */,
+				B9C854BE22DB9238000D292E /* TextFieldWithAnimation.swift in Sources */,
+				623E66FE232BDB5F00FD4310 /* Header1.swift in Sources */,
+				B939715722DB9A5D001EC8ED /* NameSpellInput.swift in Sources */,
+				B92FDB4D22DB73F6003CCF05 /* AddSpellVC.swift in Sources */,
+				62B0B56A23152C8B00E18C23 /* SpellBookPresenter.swift in Sources */,
+				62A6B3FA23142D0B00E1745F /* AddSpellToBookInput.swift in Sources */,
+				626F45DA22E0663300A00BF6 /* SchoolSpellPresenter.swift in Sources */,
+				B939714F22DB93BB001EC8ED /* FormFieldDelegate.swift in Sources */,
+				B9F958DB22DFC84600EAF8B1 /* NameSpellPresenter.swift in Sources */,
+				B9BD5CE822D8C8890041B9F7 /* MenuCollectionDelegate.swift in Sources */,
+				B939716922DBA1D3001EC8ED /* LevelSpellOutput.swift in Sources */,
+				623E6700232BDB5F00FD4310 /* Text2.swift in Sources */,
+				B939716322DB9B3F001EC8ED /* DescriptionSpellInput.swift in Sources */,
+				B9C8548A22DB8E44000D292E /* NameSpellVC.swift in Sources */,
+				62CEC02722D739180034A1AB /* ViewController.swift in Sources */,
+				62059B64230E73B00095F67D /* FilterInput.swift in Sources */,
+				B9BD5CE922D8C8890041B9F7 /* MenuCollection.swift in Sources */,
+				62FCF485231521F8000E36A3 /* SpellBookListPresenter.swift in Sources */,
+				620BD0992313F0500051D47D /* SpellListPresenter.swift in Sources */,
+				B939716122DB9B18001EC8ED /* DurationSpellInput.swift in Sources */,
+				6211FBC02301A7C7001B2DBF /* SpellBook.swift in Sources */,
+				6219BCE1230BF336006EF1BE /* Monster+Action.swift in Sources */,
+				B9BD5CE722D8C8890041B9F7 /* MenuCollectionCell.swift in Sources */,
+				62D0EDBE22E0C8A6006C732D /* SpellCell.swift in Sources */,
+				626F45D822E0661600A00BF6 /* SchoolSpellOutput.swift in Sources */,
+				6219BCDF230BE9E3006EF1BE /* MonsterService.swift in Sources */,
+				62B0B57223153AB100E18C23 /* SpellCellTouches.swift in Sources */,
+				626F45DF22E0B9AF00A00BF6 /* SpellListVC.swift in Sources */,
+				62BBD55C2327A456002473B5 /* PrinterVC.swift in Sources */,
+				62FCF48723152212000E36A3 /* SpellBookListInput.swift in Sources */,
+				6211FBC62301A9FB001B2DBF /* SpellBookListVC.swift in Sources */,
+				629B41DD231805AA000EFC6B /* Exported.swift in Sources */,
+				629B41DB23180595000EFC6B /* Imported.swift in Sources */,
+				B969D60C22DF1DE3006CA052 /* Profession.swift in Sources */,
+				62CEC02522D739180034A1AB /* AppDelegate.swift in Sources */,
+				B92FDB4A22D9E951003CCF05 /* TitleLabel.swift in Sources */,
+				62F6F9E52304411B008C0D3F /* Monster+Type.swift in Sources */,
+				B9C854A822DB8EE7000D292E /* RangeSpellVC.swift in Sources */,
+				B939715D22DB9AC7001EC8ED /* RangeSpellInput.swift in Sources */,
+				62FCF483231521D8000E36A3 /* SpellBookListOutput.swift in Sources */,
+				62F6F9EA23044EC0008C0D3F /* Biom.swift in Sources */,
+				B92FDB4322D9DA31003CCF05 /* LevelSpellVC.swift in Sources */,
+				62D0EDC122E0D5D9006C732D /* TextLabel.swift in Sources */,
+				B939715022DB93BB001EC8ED /* Validations.swift in Sources */,
+				62059B72230ECC0E0095F67D /* SpellCell2.swift in Sources */,
+				B939715922DB9A7F001EC8ED /* SchoolSpellInput.swift in Sources */,
+				B9F958D922DFC79000EAF8B1 /* NameSpellOutput.swift in Sources */,
+				621A53BB2301CEF50099F7F9 /* AddSpellBookPresenter.swift in Sources */,
+				B939716522DB9B63001EC8ED /* ClassSpellInput.swift in Sources */,
+				629059B8230A8C57000B888F /* String+html.swift in Sources */,
+				62059B6F230EA60F0095F67D /* SpellListInput.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		620BD08D2313D6DA0051D47D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 620BD0812313D6DA0051D47D /* CharacterExtension */;
+			targetProxy = 620BD08C2313D6DA0051D47D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		620BD0882313D6DA0051D47D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				620BD0892313D6DA0051D47D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		62CEC02822D739180034A1AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62CEC02922D739180034A1AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62CEC02D22D7391E0034A1AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62CEC02E22D7391E0034A1AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		620BD0902313D6DA0051D47D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CharacterExtension/CharacterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = CharacterExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.DnDSpells.CharacterExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		620BD0912313D6DA0051D47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CharacterExtension/CharacterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = CharacterExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.DnDSpells.CharacterExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		62CEC03122D7391E0034A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62CEC03222D7391E0034A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62CEC03422D7391E0034A1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9507265B73DCFD64044D5B /* Pods-DnDSpells.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DnDSpells/DnDSpells.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = DnDSpells/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.DnDSpells";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62CEC03522D7391E0034A1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B532ABC301F348036BBB7A8A /* Pods-DnDSpells.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DnDSpells/DnDSpells.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = DnDSpells/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.DnDSpells";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		620BD08F2313D6DA0051D47D /* Build configuration list for PBXNativeTarget "CharacterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620BD0902313D6DA0051D47D /* Debug */,
+				620BD0912313D6DA0051D47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CEC01C22D739180034A1AB /* Build configuration list for PBXProject "DnDSpells" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CEC03122D7391E0034A1AB /* Debug */,
+				62CEC03222D7391E0034A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CEC03322D7391E0034A1AB /* Build configuration list for PBXNativeTarget "DnDSpells" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CEC03422D7391E0034A1AB /* Debug */,
+				62CEC03522D7391E0034A1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62CEC01922D739180034A1AB /* Project object */;
+}

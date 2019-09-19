@@ -1,0 +1,50 @@
+[
+    {
+        "id": "Conjuration",
+        "name_rus": "Призыв",
+        "name_eng": "Conjuration",
+        "index": 0
+    },
+    {
+        "id": "Abjuration",
+        "name_rus": "Ограждение",
+        "name_eng": "Abjuration",
+        "index": 1
+    },
+    {
+        "id": "Necromancy",
+        "name_rus": "Некромантия",
+        "name_eng": "Necromancy",
+        "index": 2
+    },
+    {
+        "id": "Evocation",
+        "name_rus": "Проявление",
+        "name_eng": "Evocation",
+        "index": 3
+    },
+    {
+        "id": "Enchantment",
+        "name_rus": "Очарование",
+        "name_eng": "Enchantment",
+        "index": 4
+    },
+    {
+        "id": "Transmutation",
+        "name_rus": "Преобразование",
+        "name_eng": "Transmutation",
+        "index": 5
+    },
+    {
+        "id": "Illusion",
+        "name_rus": "Иллюзия",
+        "name_eng": "Illusion",
+        "index": 6
+    },
+    {
+        "id": "Divination",
+        "name_rus": "Прорицание",
+        "name_eng": "Divination",
+        "index": 7
+    }
+]

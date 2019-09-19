@@ -1,0 +1,42 @@
+[
+    {
+        "id": "Bard",
+        "name_rus": "Бард",
+        "name_eng": "Bard"
+    },
+    {
+        "id": "Cleric",
+        "name_rus": "Жрец",
+        "name_eng": "Cleric"
+    },
+    {
+        "id": "Druid",
+        "name_rus": "Друид",
+        "name_eng": "Druid"
+    },
+    {
+        "id": "Paladin",
+        "name_rus": "Паладин",
+        "name_eng": "Paladin"
+    },
+    {
+        "id": "Ranger",
+        "name_rus": "Ренджер",
+        "name_eng": "Ranger"
+    },
+    {
+        "id": "Sorcerer",
+        "name_rus": "Чародей",
+        "name_eng": "Sorcerer"
+    },
+    {
+        "id": "Warlock",
+        "name_rus": "Колдун",
+        "name_eng": "Warlock"
+    },
+    {
+        "id": "Wizard",
+        "name_rus": "Волшебник",
+        "name_eng": "Wizard"
+    }
+]

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddSpellToBookVC" customModule="DnDSpells" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="HTl-Cy-vel" id="5KR-Py-uhz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Книги заклинаний" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCx-Hh-71A">
+                    <rect key="frame" x="16" y="60" width="343" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HTl-Cy-vel">
+                    <rect key="frame" x="0.0" y="124.5" width="375" height="542.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите книгу заклинаний" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zA-sH-kM8">
+                    <rect key="frame" x="16" y="88" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <color key="textColor" name="systemGrey2"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZCx-Hh-71A" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="4At-HN-aB0"/>
+                <constraint firstItem="4zA-sH-kM8" firstAttribute="top" secondItem="ZCx-Hh-71A" secondAttribute="bottom" constant="4" id="FY3-BV-3hP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HTl-Cy-vel" secondAttribute="trailing" id="G2G-XF-pK5"/>
+                <constraint firstItem="ZCx-Hh-71A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="TEw-xK-I3K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HTl-Cy-vel" secondAttribute="bottom" id="YJW-hA-Rpu"/>
+                <constraint firstItem="HTl-Cy-vel" firstAttribute="top" secondItem="4zA-sH-kM8" secondAttribute="bottom" constant="16" id="aQu-ap-WSN"/>
+                <constraint firstItem="HTl-Cy-vel" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gGC-SB-adu"/>
+                <constraint firstItem="4zA-sH-kM8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ovx-Q1-gdu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4zA-sH-kM8" secondAttribute="trailing" constant="16" id="sQB-u8-Ox2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZCx-Hh-71A" secondAttribute="trailing" constant="16" id="zz4-iQ-U4h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="systemGrey2">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

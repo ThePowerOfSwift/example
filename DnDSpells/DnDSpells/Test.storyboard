@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4mi-56-nnS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Xi1-Cd-S1R">
+            <objects>
+                <viewController id="4mi-56-nnS" customClass="ViewController" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mql-3l-R4g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="Zn9-Lq-meb">
+                                <rect key="frame" x="159.5" y="305.5" width="56" height="56"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="E1b-5P-Vko"/>
+                                    <constraint firstAttribute="width" constant="56" id="RY3-gm-g3k"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVa-vX-Fp5">
+                                <rect key="frame" x="164.5" y="377.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchRotate:" destination="4mi-56-nnS" eventType="touchUpInside" id="khA-uM-lto"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zn9-Lq-meb" firstAttribute="centerY" secondItem="mql-3l-R4g" secondAttribute="centerY" id="12C-sj-N9R"/>
+                            <constraint firstItem="mVa-vX-Fp5" firstAttribute="top" secondItem="Zn9-Lq-meb" secondAttribute="bottom" constant="16" id="E6A-MB-caE"/>
+                            <constraint firstItem="mVa-vX-Fp5" firstAttribute="centerX" secondItem="mql-3l-R4g" secondAttribute="centerX" id="FPJ-WX-pFp"/>
+                            <constraint firstItem="Zn9-Lq-meb" firstAttribute="centerX" secondItem="mql-3l-R4g" secondAttribute="centerX" id="tg6-FN-3Lu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SVg-B9-6d1"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Zn9-Lq-meb" id="Qe3-qD-Mtw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFH-PL-7aG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2564" y="-1772"/>
+        </scene>
+        <!--CustomTB-->
+        <scene sceneID="D2S-Z3-Pc1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8Cq-z9-Lw2" customClass="CustomTB" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iNw-6i-jWR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOE-l5-QL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-132" y="-1504.4977511244379"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" width="23" height="23"/>
+    </resources>
+</document>

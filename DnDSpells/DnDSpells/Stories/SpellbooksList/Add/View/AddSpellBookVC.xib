@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddSpellBookVC" customModule="DnDSpells" customModuleProvider="target">
+            <connections>
+                <outlet property="nameTextField" destination="oGB-09-xyD" id="Sf1-Fg-oEN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-b2-fLZ">
+                    <rect key="frame" x="16" y="36" width="343" height="615"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGB-09-xyD" customClass="TextFieldWithAnimation" customModule="DnDSpells" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="86J-Um-ZXJ"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLA-bo-HT1">
+                            <rect key="frame" x="0.0" y="72" width="343" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="cLV-y7-Q6X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="СОХРАНИТЬ"/>
+                            <connections>
+                                <action selector="touchSaveSpellBook:" destination="-1" eventType="touchUpInside" id="g0i-Z8-tkT"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpB-ii-a5L">
+                            <rect key="frame" x="0.0" y="144" width="343" height="471"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" name="Backgroud"/>
+            <constraints>
+                <constraint firstItem="2hU-b2-fLZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="ORD-OI-9DS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2hU-b2-fLZ" secondAttribute="bottom" constant="16" id="ZsU-CB-RcC"/>
+                <constraint firstItem="2hU-b2-fLZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="i2k-ZV-80T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2hU-b2-fLZ" secondAttribute="trailing" constant="16" id="uzZ-HV-yl7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Backgroud">
+            <color red="0.96078431372549022" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

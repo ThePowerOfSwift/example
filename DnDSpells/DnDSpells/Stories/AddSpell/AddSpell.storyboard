@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y7o-mT-2Af">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HBL-m4-gHr">
+            <objects>
+                <navigationController id="Y7o-mT-2Af" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uh5-4o-wmv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="h82-dB-3Cd" kind="relationship" relationship="rootViewController" id="k49-4X-PFD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3N-gW-PBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-659" y="-76"/>
+        </scene>
+        <!--Level SpellVC-->
+        <scene sceneID="jIQ-Nn-icK">
+            <objects>
+                <viewController id="h82-dB-3Cd" customClass="LevelSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BM7-pv-QdV"/>
+                    <connections>
+                        <segue destination="eIo-UI-HWS" kind="show" identifier="name" id="69E-aM-nbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZe-qP-hxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171" y="-76"/>
+        </scene>
+        <!--Name SpellVC-->
+        <scene sceneID="79t-5e-Jap">
+            <objects>
+                <viewController id="eIo-UI-HWS" customClass="NameSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="JwM-AU-vRX" kind="show" identifier="school" id="u2d-yx-JoP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u35-Lj-jvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="-76"/>
+        </scene>
+        <!--School SpellVC-->
+        <scene sceneID="gbK-28-JmW">
+            <objects>
+                <viewController id="JwM-AU-vRX" customClass="SchoolSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="6aR-8f-nsO" kind="show" identifier="action" id="vr4-er-Mmm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dC-lo-lxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1975" y="-76"/>
+        </scene>
+        <!--Action SpellVC-->
+        <scene sceneID="YV6-XG-4ZH">
+            <objects>
+                <viewController id="6aR-8f-nsO" customClass="ActionSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="8Sc-aZ-T1j" kind="show" identifier="range" id="6Dx-cz-ksj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whj-Uk-THu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836" y="-76"/>
+        </scene>
+        <!--Range SpellVC-->
+        <scene sceneID="OKv-xW-dSW">
+            <objects>
+                <viewController id="8Sc-aZ-T1j" customClass="RangeSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Zc5-DO-8x9" kind="show" identifier="component" id="Xw2-pp-7wL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITk-J2-8Uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3717" y="-76"/>
+        </scene>
+        <!--Component SpellVC-->
+        <scene sceneID="WQ7-Dk-6MV">
+            <objects>
+                <viewController id="Zc5-DO-8x9" customClass="ComponentSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="5oO-0k-bDN" kind="show" identifier="duration" id="83J-uJ-BPF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agK-TL-COj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4574" y="-76"/>
+        </scene>
+        <!--Duration SpellVC-->
+        <scene sceneID="zvz-nF-gcD">
+            <objects>
+                <viewController id="5oO-0k-bDN" customClass="DurationSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Bit-Hp-v6y" kind="show" identifier="description" id="wrf-ia-kfZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGI-Qc-bMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5419" y="-76"/>
+        </scene>
+        <!--Description SpellVC-->
+        <scene sceneID="Vfy-uz-NTF">
+            <objects>
+                <viewController id="Bit-Hp-v6y" customClass="DescriptionSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="fBR-oE-jg8" kind="show" identifier="class" id="7nh-ee-Dho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="omt-bm-VvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6354" y="-76"/>
+        </scene>
+        <!--Class SpellVC-->
+        <scene sceneID="vFj-Wl-7uE">
+            <objects>
+                <viewController id="fBR-oE-jg8" customClass="ClassSpellVC" customModule="DnDSpells" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54k-RK-0JW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7257" y="-76"/>
+        </scene>
+    </scenes>
+</document>

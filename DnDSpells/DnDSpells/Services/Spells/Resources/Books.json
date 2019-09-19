@@ -1,0 +1,27 @@
+[
+    {
+        "id": "PHB",
+        "name_rus": "Книга игрока",
+        "name_eng": "Palyers Handbook"
+    },
+    {
+        "id": "TOEE",
+        "name_rus": "Храм стихийного зла",
+        "name_eng": "Temple of Elemental Evil"
+    },
+    {
+        "id": "SCPC",
+        "name_rus": "Прорастающий Хаос",
+        "name_eng": "Sprouting Chaos"
+    },
+    {
+        "id": "XGTE",
+        "name_rus": "Руководство Занатара обо всем",
+        "name_eng": "Xanathar's Guide to Everything"
+    },
+    {
+        "id": "HB",
+        "name_rus": "Самопал",
+        "name_eng": "Homebrew"
+    }
+]
